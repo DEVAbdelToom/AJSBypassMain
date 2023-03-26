@@ -1,0 +1,21 @@
+<button onclick="openFullscreen()">Enter Full Screen</button>
+<iframe id="gameFrame" src="https://eq.798sc.com/service/hvtrs8%2F-mctjsqpmt%2Ccmm-mlb-gcmgs-pwbe.jtol" width="900" height="700" frameborder="0"></iframe>
+
+<script>
+  function openFullscreen() {
+    var elem = document.getElementById("gameFrame");
+    if (elem.requestFullscreen) {
+      elem.requestFullscreen();
+    } else if (elem.mozRequestFullScreen) { /* Firefox */
+      elem.mozRequestFullScreen();
+    } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
+      elem.webkitRequestFullscreen();
+    } else if (elem.msRequestFullscreen) { /* IE/Edge */
+      elem.msRequestFullscreen();
+    }
+  }
+</script>
+
+
+
+
